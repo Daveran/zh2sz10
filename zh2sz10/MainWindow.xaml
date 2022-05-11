@@ -1,0 +1,28 @@
+﻿<Window x:Class="zh2sz10.MainWindow"
+        x:Name="mainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zh2sz10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,150,0,0"/>
+        <Label Content="Filter By" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="23,39,0,0" Width="56" Height="32"/>
+        <ComboBox Width="120" x:Name="nameFilterOptions" VerticalAlignment="Top" Margin="79,44,0,0" HorizontalAlignment="Left" SelectionChanged="nameFilterOptions_SelectionChanged"/>
+        <ComboBox Width="120" x:Name="filterOptions" VerticalAlignment="Top" Margin="280,44,0,0" HorizontalAlignment="Left"/>
+        <Button Content="Filter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,50,0,0" RenderTransformOrigin="-0.126,1.004" Click="Button_Click_2"/>
+        <Label Content="LoadData from JSON into Database" HorizontalAlignment="Left" Margin="43,95,0,0" VerticalAlignment="Top"/>
+        <Button Content="Load Data" HorizontalAlignment="Left" Margin="262,101,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Empty Database" HorizontalAlignment="Left" Margin="49,126,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="Method" HorizontalAlignment="Left" Margin="216,42,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="420,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
+        <DocumentViewer HorizontalAlignment="Left" Height="3" Margin="372,108,0,0" VerticalAlignment="Top" Width="4"/>
+        <Button Content="Select File" HorizontalAlignment="Left" Margin="609,113,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <TextBox x:Name="fileName" HorizontalAlignment="Left" Margin="420,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" TextChanged="fileName_TextChanged"/>
+        <Label Content="Csak JSON file-al működik" HorizontalAlignment="Left" Margin="420,85,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
