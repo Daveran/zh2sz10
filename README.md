@@ -1,2 +1,2 @@
 # zh2sz10
-igen
+Készítette: Miklós Dávid
